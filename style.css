@@ -135,3 +135,12 @@ body {
     background: #4ea9cc;
     float: left;
 }
+
+@media only screen and (max-width: 560px) {
+ .explorer {
+     display: none;
+ }   
+ .editor {
+     width: calc(100% - 50px)
+ }
+}
