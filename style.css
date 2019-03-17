@@ -1,0 +1,137 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bree+Serif);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css);
+
+body {
+  margin : 0;
+  font-size:16px;
+  line-height: 32px;
+  color: #666;
+  word-wrap: break-word !important;
+  font-family: 'Open Sans', sans-serif;
+  background: #c3c3c3;
+}
+.blue {
+    color: #626eff;
+}
+.blue-low {
+    color: blue;
+}
+.explorer {
+    width: 300px;
+    height: calc(100vh - 20px);
+    background: #33333c;
+    float: left;
+}
+
+.title-explorer {
+    color: #c5b5b5;
+    font-size: 12px;
+    margin: 0 10px;
+}
+.files-explorer {
+    font-size: 14px;
+}
+.files-explorer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.files-explorer ul ul li {
+    padding-left: 15px;
+}
+.files-explorer h3 {
+    font-size: 12px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    color: #d0d0d0;
+    background: #716c6c;
+}
+.files-explorer h3 small {
+    font-size: 11px;
+    background: #848282;
+    padding: 3px 5px;
+    border-radius: 3px;
+}
+.editor {
+    width: calc(100% - 350px);
+    height: calc(100vh - 20px);
+    background: #282831;
+    float: left;
+}
+.tabs-editor {
+    font-size: 13px;
+    background: #616060;
+}
+.tabs-editor div {
+    display: inline;
+    padding: 7px 10px;
+    color: #bbb9b9;
+    cursor: pointer;
+}
+.tabs-editor div.active {
+    background: #353333;
+}
+.editor .content {
+    height: calc(100vh - 202px);
+    box-shadow: inset 0 3px 3px #211b1b;
+    overflow-y: auto;
+}
+.editor .content .row { 
+    line-height: normal; 
+}
+.editor .content .row .column:nth-child(1) {
+    width: 8%;
+    float: left;
+    text-align: center;
+}
+.editor .content .row .column:nth-child(2) {
+    width: 92%;
+    float: left;
+}
+.command-prompt {
+    height: 150px;
+    border-top: 1px solid #5f5e5e;
+    
+}
+.tabs-command-prompt div {
+    display: inline;
+    padding: 7px 10px;
+    cursor: pointer;
+    font-size: 12px;
+}
+.tabs-command-prompt div.active {
+    color: #c3c3c3;
+    border-bottom : 1px solid #5f5e5e;
+    cursor: default;
+}
+.content-command-prompt {
+    font-family: serif;
+    color: #c3c3c3;
+    padding: 0 10px;
+    line-height: 16px;
+}
+.main-menu {
+    width: 50px;
+    height: calc(100vh - 20px);
+    background: #393a3c;
+    float: left;
+    color: #c3c3c3;
+}
+.main-menu div {
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    color: #d2d1d1;
+}
+.main-menu div:hover, .main-menu div.active {
+    color: #fff;
+}
+
+.footer {
+    width: 100%;
+    height: 20px;
+    background: #4ea9cc;
+    float: left;
+}
