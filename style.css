@@ -64,15 +64,25 @@ body {
     font-size: 13px;
     background: #616060;
 }
-.tabs-editor div {
+.tabs-editor .tab {
     display: inline;
     padding: 7px 10px;
     color: #bbb9b9;
     cursor: pointer;
 }
-.tabs-editor div.active {
-    background: #353333;
+.tabs-editor .tab em{
+     display: none;
+     padding-left: 5px; 
 }
+.tabs-editor .tab.active { background: #353333; }
+.tabs-editor .tab.active em, 
+.tabs-editor div.tab:hover em{ display: inherit; }
+.syntax {
+    font-size: 10px;
+    margin-right: 5px;
+}
+.html { color: #b7871c; }   
+.css { color: #7eaffb; }
 .editor .content {
     height: calc(100vh - 202px);
     box-shadow: inset 0 3px 3px #211b1b;
@@ -139,8 +149,10 @@ body {
 @media only screen and (max-width: 560px) {
  .explorer {
      display: none;
+     position: fixed;
+     margin-left: 50px;
  }   
  .editor {
-     width: calc(100% - 50px)
+     width: calc(100% - 50px) !important;
  }
 }
