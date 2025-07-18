@@ -540,9 +540,10 @@ ul.email li i {
 /** about **/
 
 .about {
-     background: url(../images/about_bg.jpg);
+     background: url(../images/banner.jpg);
      background-position: center;
      background-repeat: no-repeat;
+     background-attachment: fixed;
      height: 100vh;
      padding: 90px 0;
 }
