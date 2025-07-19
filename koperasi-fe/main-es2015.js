@@ -356,6 +356,14 @@ const routes = [
             {
                 path: 'profile',
                 loadChildren: () => __webpack_require__.e(/*! import() | demo-pages-profile-profile-module */ "demo-pages-profile-profile-module").then(__webpack_require__.bind(null, /*! ./demo/pages/profile/profile.module */ "./src/app/demo/pages/profile/profile.module.ts")).then(module => module.ProfilePageModule)
+            },
+            {
+                path: 'sale',
+                loadChildren: () => __webpack_require__.e(/*! import() | demo-pages-sale-sale-module */ "demo-pages-sale-sale-module").then(__webpack_require__.bind(null, /*! ./demo/pages/sale/sale.module */ "./src/app/demo/pages/sale/sale.module.ts")).then(module => module.SalePageModule)
+            },
+            {
+                path: 'report',
+                loadChildren: () => __webpack_require__.e(/*! import() | demo-pages-report-report-module */ "demo-pages-report-report-module").then(__webpack_require__.bind(null, /*! ./demo/pages/report/report.module */ "./src/app/demo/pages/report/report.module.ts")).then(module => module.ReportPageModule)
             }
         ]
     },
@@ -1795,30 +1803,56 @@ const NavigationItems = [
     },
     {
         id: 'basic',
-        title: 'Pengiriman & Pengambilan',
+        title: 'Point of Sale',
         type: 'collapse',
         icon: 'feather icon-box',
         children: [
             {
                 id: 'alert',
-                title: 'Jadwal Pengiriman',
+                title: 'Penjualan',
                 type: 'item',
-                url: '/basic/alert'
+                url: '/sale/cashier'
             },
             {
                 id: 'alert',
-                title: 'Status Pengambilan',
+                title: 'Riwayat Penjualan',
                 type: 'item',
-                url: '/basic/alert'
+                url: '/sale/history'
             },
             {
                 id: 'alert',
-                title: 'Lokasi Toko Koperasi',
+                title: 'Daftar Harga',
                 type: 'item',
-                url: '/basic/alert'
+                url: '/sale/price-list'
             },
         ]
     },
+    // {
+    //   id: 'basic',
+    //   title: 'Pengiriman & Pengambilan',
+    //   type: 'collapse',
+    //   icon: 'feather icon-box',
+    //   children: [
+    //     {
+    //       id: 'alert',
+    //       title: 'Jadwal Pengiriman',
+    //       type: 'item',
+    //       url: '/basic/alert'
+    //     },
+    //     {
+    //       id: 'alert',
+    //       title: 'Status Pengambilan',
+    //       type: 'item',
+    //       url: '/basic/alert'
+    //     },
+    //     {
+    //       id: 'alert',
+    //       title: 'Lokasi Toko Koperasi',
+    //       type: 'item',
+    //       url: '/basic/alert'
+    //     },
+    //   ]
+    // },
     {
         id: 'basic',
         title: 'Anggota Koperasi',
@@ -1855,25 +1889,19 @@ const NavigationItems = [
                 id: 'alert',
                 title: 'Laporan Penjualan',
                 type: 'item',
-                url: '/basic/alert'
+                url: '/report/sale'
+            },
+            {
+                id: 'alert',
+                title: 'Laporan Pengeluaran',
+                type: 'item',
+                url: '/report/expenses'
             },
             {
                 id: 'alert',
                 title: 'Laporan Stok',
                 type: 'item',
-                url: '/basic/alert'
-            },
-            {
-                id: 'alert',
-                title: 'Evaluasi Supplier',
-                type: 'item',
-                url: '/basic/alert'
-            },
-            {
-                id: 'alert',
-                title: 'Catatan Pelanggaran',
-                type: 'item',
-                url: '/basic/alert'
+                url: '/report/stock'
             },
         ]
     },
